@@ -44,6 +44,8 @@ tasks:
 
   integration_test_pass:
     description: Run the passing integration test (and take a look what changed)
+    prerequisites:
+      - dep
     dependencies:
       - db_container
     run:
